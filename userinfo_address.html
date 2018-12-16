@@ -5,15 +5,16 @@
 <!--<![endif]-->
 
 <head>
-	<title>User Info | Products</title>
+	<title>Your Address | YAHAHA</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="PassiveSSL - Better SSL Environment">
-	<meta name="author" content="NISL">
+	<meta name="description" content="QueenAdmin - Beautiful Bootstrap Admin Dashboard Theme">
+	<meta name="author" content="The Develovers">
 
 	<!-- CSS -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/ionicons.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/main.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Google Fonts -->
@@ -24,26 +25,12 @@
 	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="assets/ico/queenadmin-favicon114x114.png">
 	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="assets/ico/queenadmin-favicon72x72.png">
 	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="assets/ico/queenadmin-favicon57x57.png">
-	<link rel="shortcut icon" href ="assets/ico/favicon.ico">
-    <!-- plotly.js -->
-    <script src="assets/js/plotly-latest.min.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
-    <script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
-    <!--{% block inference %}-->
-    <!--{% endblock %}-->
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+
 </head>
-<!--{% block bodyClass %}-->
-<body class="fixed-top-active dashboard">
-<!--{% endblock %}-->
+
+<body class="fixed-top-active inplace-editing">
+
 	<!-- WRAPPER -->
 	<div class="wrapper">
 		<!-- TOP NAV BAR -->
@@ -383,201 +370,114 @@
 					<ul class="breadcrumb pull-left">
 						<li><i class="icon ion-home"></i><a href="userinfo_YAHAHA.html">Home</a></li>
 						<!--{% block contentBar %}{% endblock %}-->
-                        <li class="active">Your Products</li>
+                        <li class="active">User Address</li>
 					</ul>
 				</div>
-				<!-- TICKETS -->
+				<!-- END PRIMARY CONTENT HEADING -->
+
+				<!-- IN-PLACE EDITING -->
 				<div class="widget">
 					<div class="widget-header clearfix">
-						<h3><i class="icon ion-pricetag"></i>
-							<span>Products</span>
+						<h3><i class="icon ion-compose"></i>
+							<span>Your Address</span>
 						</h3>
 						<div class="btn-group widget-header-toolbar">
 							<a href="#" title="Expand/Collapse" class="btn btn-link btn-toggle-expand"><i class="icon ion-ios7-arrow-up"></i></a>
 						</div>
-
 					</div>
-					<div class="widget-content table-responsive">
-						<table id="ticket-table" class="table table-sorting">
-							<thead>
-								<tr>
-									<th>Product ID</th>
-									<th>Date</th>
-									<th>Category</th>
-									<th>Product Name</th>
-									<th>Price</th>
-									<th>Product Status</th>
-								</tr>
-							</thead>
+					<div class="widget-content">
+						<table id="user" class="table table-bordered table-striped">
 							<tbody>
 								<tr>
-									<td><a href="#">[#18765]</a></td>
-									<td>Nov 21, 2013 15:45</td>
-									<td>Sports</td>
-									<td>Basketball</td>
-									<td>$50</td>
-									<td><span class="label label-primary">On Sale</span></td>
+									<td>Contact Name</td>
+									<td>Robin Ding</td>
 								</tr>
 								<tr>
-									<td><a href="#">[#18766]</a></td>
-									<td>Nov 21, 2013 16:12</td>
-									<td>Game</td>
-									<td>COD IV</td>
-									<td>$30</td>
-									<td><span class="label label-success">In Stock</span></td>
+									<td>Email</td>
+									<td>dy4556@columbia.edu</td>
 								</tr>
 								<tr>
-									<td><a href="#">[#18767]</a></td>
-									<td>Nov 21, 2013 16:43</td>
-									<td>Book</td>
-									<td>Intro to DB</td>
-									<td>$30</td>
-									<td><span class="label label-default">Out Of Stock</span></td>
+									<td>Phone Number</td>
+									<td>12345678</td>
 								</tr>
 								<tr>
-									<td><a href="#">[#18768]</a></td>
-									<td>Nov 22, 2013 08:24</td>
-									<td>General Info</td>
-									<td>Smith</td>
-									<td><a href="#">Can't Change My Address</a></td>
-									<td><span class="label label-info">#3 - Urgent</span></td>
+									<td>ZIP</td>
+									<td>10025</td>
 								</tr>
 								<tr>
-									<td><a href="#">[#18769]</a></td>
-									<td>Nov 22, 2013 08:30</td>
-									<td>Sales</td>
-									<td>Smith</td>
-									<td><a href="#">Review Tab Malfunction</a></td>
-									<td><span class="label label-default">#6 - Low</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18770]</a></td>
-									<td>Nov 22, 2013 08:47</td>
-									<td>Front-End Site</td>
-									<td>John Doe</td>
-									<td><a href="#">Broken Link</a></td>
-									<td><span class="label label-warning">#2 - Emergency</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18771]</a></td>
-									<td>Nov 23, 2013 14:08</td>
-									<td>Sales</td>
-									<td>Jack</td>
-									<td><a href="#">Need Info About My Order Status</a></td>
-									<td><span class="label label-danger">#1 - Critical</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18772]</a></td>
-									<td>Nov 23, 2013 17:45</td>
-									<td>Technical Support</td>
-									<td>Darren</td>
-									<td><a href="#">Bouncing Email</a></td>
-									<td><span class="label label-danger">#1 - Critical</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18773]</a></td>
-									<td>Nov 21, 2013 16:43</td>
-									<td>General Info</td>
-									<td>Jane Doe</td>
-									<td><a href="#">Regarding Customer Support</a></td>
-									<td><span class="label label-success">#5 - Medium</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18774]</a></td>
-									<td>Nov 21, 2013 15:45</td>
-									<td>Front-End Site</td>
-									<td>Smith</td>
-									<td><a href="#">Product Review Problem</a></td>
-									<td><span class="label label-primary">#4 - High</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18775]</a></td>
-									<td>Nov 21, 2013 16:12</td>
-									<td>Technical Support</td>
-									<td>Sean</td>
-									<td><a href="#">Can't Download the Guide Doc</a></td>
-									<td><span class="label label-success">#5 - Medium</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18776]</a></td>
-									<td>Nov 23, 2013 14:08</td>
-									<td>Sales</td>
-									<td>Jack</td>
-									<td><a href="#">Need Info About My Order Status</a></td>
-									<td><span class="label label-danger">#1 - Critical</span></td>
-								</tr>
-								<tr>
-									<td><a href="#">[#18777]</a></td>
-									<td>Nov 21, 2013 16:43</td>
-									<td>General Info</td>
-									<td>Jane Doe</td>
-									<td><a href="#">Regarding Customer Support</a></td>
-									<td><span class="label label-success">#5 - Medium</span></td>
+									<td>Address</td>
+									<td>Enclave, 110st, Manhattan, NY</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<!-- END TICKETS -->
+				<!-- END IN-PLACE EDITING -->
+
+				<!--A row-->
 				<div class="row">
-						<!-- BASIC INPUT -->
+					<div class="col-md-12">
+						<!-- CONTACT FORM -->
 						<div class="widget">
 							<div class="widget-header clearfix">
-								<h3><i class="icon ion-android-arrow-down-right"></i>
-									<span>Add Product</span>
+								<h3><i class="icon ion-compose"></i>
+									<span>Update Address</span>
 								</h3>
 								<div class="btn-group widget-header-toolbar visible-lg">
 									<a href="#" title="Expand/Collapse" class="btn btn-link btn-toggle-expand"><i class="icon ion-ios7-arrow-up"></i></a>
 								</div>
 							</div>
 							<div class="widget-content">
-								<div class="form-horizontal">
-									<div class="form-group">
-										<label class="col-md-2 control-label">Product Name</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="productname" placeholder="text field">
+								<form class="form-horizontal" role="form">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="contact-name" class="control-label sr-only">Name</label>
+												<input type="text" class="form-control" id="contact-name" placeholder="Name">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="contact-email" class="control-label sr-only">Email</label>
+												<input type="email" class="form-control" id="contact-email" placeholder="Email">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="phone_number" class="control-label sr-only">Phone number</label>
+												<input type="text" class="form-control" id="phone_number" placeholder="Phone">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="zip_code" class="control-label sr-only">ZIP</label>
+												<input type="email" class="form-control" id="zip_code" placeholder="ZIP">
+											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-2 control-label">Price</label>
-										<div class="col-md-10">
-											<input type="text" class="form-control" id="price" placeholder="text field">
+										<label for="address_info" class="control-label sr-only">Address</label>
+										<div class="col-sm-12">
+											<textarea class="form-control" id="address_info" name="address_info" rows="5" cols="30" placeholder="Address"></textarea>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-md-2 control-label">Description</label>
-										<div class="col-md-10">
-											<textarea class="form-control" placeholder="textarea" id="description" rows="4"></textarea>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="file-upload" class="col-md-2 control-label">Upload product image</label>
-										<div class="col-md-10">
-											<input type="file" id="file-upload">
-											<p class="help-block">
-												<em>JPG file ONLY!</em>
-											</p>
-										</div>
-									</div>
-									<!--<div class="form-group">-->
-										<!--<label class="col-sm-2 control-label">Static Control</label>-->
-										<!--<div class="col-sm-10">-->
-											<!--<p class="form-control-static">email@example.com</p>-->
-										<!--</div>-->
-									<!--</div>-->
 									<div class="form-group">
 										<div class="col-sm-12">
-											<button type="submit" class="btn btn-success" onclick="uploadPhoto()"><i class="icon ion-checkmark-circled"></i> Create Product</button>
+											<button type="submit" class="btn btn-primary">Update</button>
 										</div>
 									</div>
-								</div>
+								</form>
 							</div>
 						</div>
-						<!-- END BASIC INPUT -->
+						<!-- END CONTACT FORM -->
+					</div>
 				<div>
+				<!--A row end-->
 
-            </div>
-        </div>
+			</div>
+		</div>
 		<!-- END COLUMN RIGHT -->
 	</div>
 	<!-- END WRAPPER -->
@@ -588,41 +488,16 @@
 	<script src="assets/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 	<script src="assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="assets/js/queen-common.min.js"></script>
-	<script src="assets/js/plugins/stat/flot/jquery.flot.min.js"></script>
-	<script src="assets/js/plugins/stat/flot/jquery.flot.resize.min.js"></script>
-	<script src="assets/js/plugins/stat/flot/jquery.flot.time.min.js"></script>
-	<script src="assets/js/plugins/stat/flot/jquery.flot.orderBars.js"></script>
-	<script src="assets/js/plugins/stat/flot/jquery.flot.tooltip.min.js"></script>
-	<script src="assets/js/plugins/mapael/raphael/raphael-min.js"></script>
-	<script src="assets/js/plugins/mapael/jquery.mapael.js"></script>
-	<script src="assets/js/plugins/mapael/maps/world_countries.js"></script>
-	<script src="assets/js/plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-	<script src="assets/js/plugins/moment/moment.min.js"></script>
-	<script src="assets/js/plugins/bootstrap-editable/bootstrap-editable.min.js"></script>
-	<script src="assets/js/plugins/jquery-maskedinput/jquery.masked-input.min.js"></script>
-	<script src="assets/js/queen-charts.min.js"></script>
-	<script src="assets/js/queen-maps.min.js"></script>
-	<script src="assets/js/queen-elements.min.js"></script>
-	<!-- searchBar unit -->
-	<script src="assets/js/plugins/bootstrap-slider/bootstrap-slider.js"></script>
-	<script src="assets/js/queen-page.min.js"></script>
-	<!-- columnFilter unit -->
-	<script src="assets/js/plugins/datatable/jquery.dataTables.min.js"></script>
-	<script src="assets/js/plugins/datatable/exts/dataTables.colVis.bootstrap.js"></script>
-	<script src="assets/js/plugins/datatable/exts/dataTables.colReorder.min.js"></script>
-	<script src="assets/js/plugins/datatable/exts/dataTables.tableTools.min.js"></script>
-	<script src="assets/js/plugins/datatable/dataTables.bootstrap.js"></script>
-	<script src="assets/js/queen-table.min.js"></script>
-	<!-- certTable -->
 	<script src="assets/js/plugins/bootstrap-editable/jquery.mockjax.min.js"></script>
+	<script src="assets/js/plugins/moment/moment.min.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+	<script src="assets/js/plugins/bootstrap-editable/bootstrap-editable.min.js"></script>
 	<script src="assets/js/plugins/typeahead/typeahead.js"></script>
 	<script src="assets/js/plugins/typeahead/typeaheadjs.1.5.1.js"></script>
 	<script src="assets/js/plugins/select2/select2.min.js"></script>
 	<script src="assets/js/plugins/bootstrap-editable/address.custom.js"></script>
 	<script src="assets/js/plugins/bootstrap-editable/demo-mock.js"></script>
-	<script src="assets/js/controlsellname.js"></script>
-
+	<script src="assets/js/queen-elements.min.js"></script>
 
 </body>
 </html>
