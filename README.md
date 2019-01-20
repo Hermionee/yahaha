@@ -10,7 +10,9 @@ In particular, the platform has a login page which authorizes the identity of th
 
 ## Run: <br />
 ```
-The project was shut down at the end of 2018. We are trying to incorporate more functions. But the 'Recommender' function is isolate from the web services and is done prior to the implementation of the system. It consisted of three association rule mining algorithm: apriori, eclat and FPgrowth, which all aim to find the associated frequent itemsets with high confidence.
+The project was shut down at the end of 2018. We are trying to incorporate more functions. 
+But the 'Recommender' function is isolate from the web services and is done prior to the implementation of the system. 
+It consisted of three association rule mining algorithm: apriori, eclat and FPgrowth, which all aim to find the associated frequent itemsets with high confidence.
 
 To run the algorithms, download the 'Recommender' folder. Enter the directory in your terminal. The algorithms are all writtern in python3. Use python (or python3) command:(take eclat.py for example)
 
