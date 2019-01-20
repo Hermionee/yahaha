@@ -8,4 +8,5 @@ Our secondary E-market platform is based on [AWS web services](https://aws.amazo
 
 In particular, the platform has a login page which authorizes the identity of the students. After that, student can input the keyword of his/her wanted item and get a series of results. Then students can negotiate the price with the seller for a certain item if he/she determines to buy. After chekcing out, the buyer will receive an e-mail showing the e-mail address of the seller to set up a pickup location. Finally, the platform has an NLP assistant which can help student buyer to decide if there are relevant items on sale on our platform. When there are no relevant items on sale, we will record the buyer's phone number and when some one uploads the item, the perspective buyer will receive an SMS telling him/her that the item is available. When there are items avaible, we will tell the buyer the website address of the item so user can just click it and see the details.
 
+js files are not available here because it contains API key information.
 ***Technologies and tools used: AWS Cognito, Rekognition, ElasticSearch, Lex, VPC, SQS, SNS, DynamoDB, HTML, CSS, S3, Javascript
