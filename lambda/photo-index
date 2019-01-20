@@ -1,0 +1,13 @@
+import json
+import boto3
+def lambda_handler(event, context):
+    client = boto3.client('lex-runtime')
+    response = client.post_text( botName='PhotoBot',
+        botAlias='photobot',
+        userId="dh2914",
+        inputText=event['labels'][0]['q'])
+    print(response)
+    
+    return {
+       "greeting": response["message"]
+    }
