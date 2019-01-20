@@ -16,7 +16,7 @@ It consisted of three association rule mining algorithm: apriori, eclat and FPgr
 
 To run the algorithms, download the 'Recommender' folder. Enter the directory in your terminal. The algorithms are all writtern in python3. Use python (or python3) command:(take eclat.py for example)
 
-python eclat.py <input data file path> --output <output file path> -s <min_support_value> -c <min_confidence_value> -f rule
+        python eclat.py <input data file path> --output <output file path> -s <min_support_value> -c <min_confidence_value> -f rule
 
 The input data file format is in horizontal format, namely for each row, the transaction and bought items are recorded:
 ------------------------------------------------------------
